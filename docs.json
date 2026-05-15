@@ -150,6 +150,12 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Navbar",
+        "pages": [
+          "original-patterns"
+        ]
       }
     ]
   },
