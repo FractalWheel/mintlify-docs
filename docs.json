@@ -154,7 +154,13 @@
       {
         "tab": "Original Patterns",
         "pages": [
-          "original-patterns"
+          "original-patterns",
+          {
+            "group": "Navbar",
+            "pages": [
+              "original-code"
+            ]
+          }
         ]
       }
     ]

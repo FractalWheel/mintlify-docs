@@ -1,12 +1,12 @@
 ---
-title: "Original Patterns"
+title: "Original Code"
 ---
 
-This tab is dedicated to documenting original patterns found in the header that hydrogen uses in case we need a fallback.
 
-<CodeGroup>
 
-```text Navbar (Slightly Cleaned) expandable
+This is the original code for the Navbar without much configuration. Refer back to this in case you ever mess up. 
+
+```typescript original navbar expandable lines
 import {Suspense} from 'react';
 import {Await, useAsyncValue} from 'react-router';
 import {
@@ -245,5 +245,3 @@ const FALLBACK_HEADER_MENU = {
   ],
 };
 ```
-
-</CodeGroup>
