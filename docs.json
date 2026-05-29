@@ -30,105 +30,21 @@
           {
             "group": "Your first days",
             "pages": []
-          },
-          {
-            "group": "Tools & access",
-            "pages": []
           }
         ]
       },
       {
-        "tab": "HR & People",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": []
-          },
-          {
-            "group": "Benefits & time off",
-            "pages": []
-          },
-          {
-            "group": "Growth & pay",
-            "pages": []
-          }
-        ]
-      },
-      {
-        "tab": "IT & Security",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": []
-          },
-          {
-            "group": "Access & devices",
-            "pages": []
-          },
-          {
-            "group": "Security training",
-            "pages": []
-          }
-        ]
-      },
-      {
-        "tab": "Policies",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": ["policies/index"]
-          },
-          {
-            "group": "Conduct & spend",
-            "pages": [
-              "policies/code-of-conduct",
-              "policies/expense-reimbursement",
-              "policies/travel-policy"
-            ]
-          },
-          {
-            "group": "Remote work",
-            "pages": [
-              "policies/remote-work/index",
-              "policies/remote-work/home-office-setup",
-              "policies/remote-work/time-zones"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Engineering",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": []
-          },
-          {
-            "group": "Setup & deployment",
-            "pages": []
-          },
-          {
-            "group": "Incident response",
-            "pages": []
-          },
-          {
-            "group": "Architecture",
-            "pages": []
-          }
-        ]
-      },
-      {
-        "tab": "Original Patterns",
+        "tab": "Case Studies",
         "pages": [
-          "original-patterns",
+          "untitled-page",
           {
-            "group": "Navbar",
-            "pages": [
-              "original-code",
-              "cleaned-up"
-            ]
+            "group": "Limited Product Line Shop",
+            "pages": []
           }
         ]
+      },
+      {
+        "tab": "Code Templates"
       }
     ]
   },
