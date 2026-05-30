@@ -49,8 +49,8 @@
     ]
   },
   "logo": {
-    "light": "/images/VantageFavicon.svg",
-    "dark": "/images/VantageFavicon.svg"
+    "light": "/logo/dark.svg",
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
