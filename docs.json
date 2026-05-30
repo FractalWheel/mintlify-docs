@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "sequoia",
-  "name": "Knowledge base",
+  "name": "The Vantage Vault",
   "description": "Onboarding, employee handbook, HR guides, IT help, company policies, and department runbooks.",
   "colors": {
     "primary": "#008F64",
@@ -46,8 +46,8 @@
     ]
   },
   "logo": {
-    "light": "/images/VantageFavicon.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/vantagesupply.svg",
+    "dark": "/images/vantagesupply.svg"
   },
   "navbar": {
     "links": [
