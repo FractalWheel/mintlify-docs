@@ -8,7 +8,10 @@
     "light": "#1EFFBC",
     "dark": "#008F64"
   },
-  "favicon": "/favicon.ico",
+  "favicon": {
+    "light": "/images/VantageFavicon.svg",
+    "dark": "/images/VantageFavicon.svg"
+  },
   "icons": {
     "library": "lucide"
   },
