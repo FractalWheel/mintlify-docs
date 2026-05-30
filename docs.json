@@ -46,8 +46,8 @@
     ]
   },
   "logo": {
-    "light": "/images/vantagesupply.svg",
-    "dark": "/images/vantagesupply.svg"
+    "light": "/images/VantageFavicon.svg",
+    "dark": "/images/VantageFavicon.svg"
   },
   "navbar": {
     "links": [
