@@ -4,9 +4,9 @@
   "name": "The Vantage Vault",
   "description": "An easy to navigate vault for documentation!",
   "colors": {
-    "primary": "#008F64",
-    "light": "#1EFFBC",
-    "dark": "#008F64"
+    "primary": "#E56903",
+    "light": "#FF521B",
+    "dark": "#E56903"
   },
   "favicon": {
     "light": "/images/VantageFavicon.svg",
@@ -28,7 +28,9 @@
         "groups": [
           {
             "group": "Welcome",
-            "pages": ["index"]
+            "pages": [
+              "welcome-to-vantage-supply"
+            ]
           },
           {
             "group": "Your first days",
@@ -37,20 +39,23 @@
         ]
       },
       {
-        "tab": "Case Studies",
-        "pages": [
-          "untitled-page",
+        "tab": "Conquer",
+        "groups": [
           {
-            "group": "Limited Product Line Shop",
-            "pages": []
+            "group": "Takumi Automotives",
+            "pages": [
+              "takumi-automotives",
+              "art-direction",
+              "factors"
+            ]
           }
         ]
       }
     ]
   },
   "logo": {
-    "light": "/logo/dark.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/Property1=DarkScreen.svg",
+    "dark": "/images/Property1=LightScreen.svg"
   },
   "navbar": {
     "links": [
@@ -75,6 +80,10 @@
     "family": "Geist"
   },
   "background": {
-    "decoration": "windows"
+    "decoration": "windows",
+    "color": {
+      "light": "#FEFEF7",
+      "dark": "#000003"
+    }
   }
 }
