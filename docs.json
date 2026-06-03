@@ -54,8 +54,8 @@
     ]
   },
   "logo": {
-    "light": "/images/Property1=DarkScreen.svg",
-    "dark": "/images/Property1=LightScreen.svg"
+    "light": "/images/Property1=LightScreen.svg",
+    "dark": "/images/Property1=DarkScreen.svg"
   },
   "navbar": {
     "links": [
