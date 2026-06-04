@@ -45,10 +45,15 @@
             "group": "Takumi Automotives",
             "pages": [
               "takumi-automotives",
-              "art-direction",
-              "factors"
+              "art-direction"
             ]
           }
+        ]
+      },
+      {
+        "tab": "Code Snippets",
+        "pages": [
+          "untitled-page"
         ]
       }
     ]
