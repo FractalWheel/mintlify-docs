@@ -5,7 +5,7 @@
   "description": "An easy to navigate vault for documentation!",
   "colors": {
     "primary": "#E56903",
-    "light": "#FF521B",
+    "light": "#DDFFF7",
     "dark": "#E56903"
   },
   "favicon": {
@@ -97,10 +97,10 @@
     "family": "Geist"
   },
   "background": {
-    "decoration": "windows",
+    "decoration": "grid",
     "color": {
       "light": "#FEFEF7",
-      "dark": "#000003"
+      "dark": "#080708"
     }
   }
 }
