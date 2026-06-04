@@ -53,6 +53,7 @@
       {
         "tab": "Code Snippets",
         "pages": [
+          "start-here",
           {
             "group": "Footer",
             "pages": [
@@ -64,8 +65,7 @@
             "pages": [
               "gsap-utils"
             ]
-          },
-          "start-here"
+          }
         ]
       }
     ]
