@@ -1,0 +1,50 @@
+---
+title: "Sticky Footer"
+---
+
+
+
+This "Sticky Footer" actually uses a fixed position so we're not actually having it sticking to the page in the background.
+
+```typescript expandable
+const Content = () => {
+  return (
+    <>
+      <div className="h-full w-full flex-col-reverse flex justify-between">
+        <div className="w-full flex flex-row justify-between items-center">
+          <div className="uppercase">
+            <span className="cg-h5 font-bold">Vantage</span>
+            <span className="cg-h5 font-light">Supply</span>
+          </div>
+
+          <span className="cg-h6 font-medium ">The Psychological Machine</span>
+        </div>
+
+        <div className="flex flex-col">
+          <p>Contact Us</p>
+          <a href="mailto:hello@vantage.supply" className="underline">
+            hello@vantage.supply
+          </a>
+        </div>
+      </div>
+
+      <div className="h-full flex flex-col ">
+        <span></span>
+      </div>
+    </>
+  );
+};
+
+export default function Footer() {
+  return (
+    <footer
+      style={{ clipPath: "inset(0 0 0 0);" }}
+      className="bg-red-500 text-[#fffffc] splitApart h-[40vh] relative  "
+    >
+      <div className="fixed h-full w-full bottom-0 px-(--paddingX) py-24">
+        <Content />
+      </div>
+    </footer>
+  );
+}
+```

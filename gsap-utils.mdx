@@ -1,0 +1,102 @@
+---
+title: "GsapUtils"
+---
+
+This code block is important for quickly importing and registering GSAP and GSAP Plugins and effects!
+
+## Copy and Paste
+
+```typescript expandable
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { SplitText } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(SplitText) ;
+
+
+export * from "gsap/ScrollTrigger"
+export * from "gsap/SplitText"
+export * from "gsap";
+
+
+
+gsap.registerEffect({
+  name: "fade",
+  effect: (targets: gsap.TweenTarget, config: { duration: number; }) => {
+    return gsap.from(targets, {duration: config.duration, opacity: 0, stagger: 0.5});
+  },
+  defaults: {duration: 2}, //defaults get applied to any "config" object passed to the effect
+})
+
+
+gsap.registerEffect({
+    name: "clipPathReveal",
+    effect: (targets: gsap.TweenTarget, config: string) => {
+        return gsap.to(targets, {
+                  clipPath: "inset(0 0 0 0%)",
+                  ease: "power2.inOut",
+                  duration: 0.5,
+
+                })
+
+            
+    }
+})
+
+
+gsap.registerEffect({
+  name:"FisherYatesTextShuffle", effect: (targets: gsap.TweenTarget, config: any) => {
+
+  
+    return      gsap.to(targets, {
+          yPercent: -90,
+          delay: 0.3,
+          ease: "expo.inOut",
+          duration: 1,
+          stagger: {
+            each: 0.034,
+          },
+        });
+  }
+})
+
+gsap.registerEffect({
+    name: "clipPathRevealOut",
+    effect: (targets: gsap.TweenTarget, config: any) => {
+        return gsap.to(targets, {
+                  clipPath: "inset(0 0 0 100%)",
+                  ease: "power2.inOut",
+                  duration: 0.5,
+                  scrollTrigger: {
+                    trigger: targets as HTMLElement,
+                    start: "top 75% ",
+                    toggleActions: "play play resume reverse",
+                  },
+                })
+
+            
+    }
+})
+```
+
+## Import
+
+Import this at top of page to get started using it. You shouldn't need to use register plugins directly on the route anymore.
+
+```typescript
+
+import { gsap } from "@/GsapUtils";
+import { useGSAP } from "@gsap/react";
+```
+
+## Usage
+
+All you would have have to do is call the effect in the useGSAP hook. 
+
+```typescript
+     
+ if (SiteRevealShown === true && isAnimating === true) {
+        gsap.effects.clipPathRevealOut(".ImageGrid", { duration: 3 });
+      }
+```

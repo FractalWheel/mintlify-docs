@@ -53,7 +53,19 @@
       {
         "tab": "Code Snippets",
         "pages": [
-          "untitled-page"
+          {
+            "group": "Footer",
+            "pages": [
+              "sticky-footer"
+            ]
+          },
+          {
+            "group": "GSAP",
+            "pages": [
+              "gsap-utils"
+            ]
+          },
+          "start-here"
         ]
       }
     ]
