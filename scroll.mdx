@@ -1,0 +1,82 @@
+---
+title: "Scroll"
+---
+
+
+
+## Scroll Y Position
+
+### Code
+
+```typescript
+export function GetScrollYPosition(){
+    //this function is just for getting the user's current Y scroll position.
+    const [YPos, setYPos] = useState<number>(0)
+
+    useEffect(()=>{
+        const ManageYPosition = () =>{
+          const currentYPosition = window.scrollY
+            setYPos(currentYPosition)
+        }
+        window.addEventListener("scroll",ManageYPosition)
+return ()=>removeEventListener("scroll",ManageYPosition)
+    }, [YPos])
+//updates every time the YPos changes and the scroll event is triggered.
+//returns State as a variable that we can read.
+
+    return [YPos] as const
+}
+```
+
+### Usage
+
+```typescript
+const YPos = GetScrollYPosition()
+//The Y Pos will update based off what we set in its code.
+<div> {YPos}</div>     
+```
+
+## Scroll Direction
+
+### Code
+
+```typescript expandable
+export function GetScrollDirection(){
+    //this function gets the user's last Scroll Direction.
+    const [ScrollDirection, setScrollDirection] = useState<string>("up")
+    const InitialYPosition = useRef(0)
+    const [YPos] = GetScrollYPosition()
+//We need to compare an initial Scroll Y Position value vs a secondary one. This is so we can compare values between renders.
+//We'll set a up a ref to get our initial position vs our YPos function output from GetScrollYPosition.
+//So we'll let's our ref is InitialYPosition.
+
+    useEffect(()=>{
+        const ManageScrollDirection = () => {
+            const FindScrollDirection = InitialYPosition.current >= YPos ? "up" : "down"
+
+            if (FindScrollDirection != ScrollDirection && Math.abs(InitialYPosition.current - YPos) > 6){
+                setScrollDirection(FindScrollDirection)
+            }
+            //we need to setup some sort of buffer so it isn't always going to Up as we scroll down.
+//InitialYPosition is always 1 render behind YPos, 
+// meaning that if InitialYposition is bigger than YPos, that means we are scrolling up
+// this is because YPosition is like depth in a pool. The larger the number of YPos means the farther you scrolled. 
+            InitialYPosition.current = YPos
+    }
+
+window.addEventListener("scroll", ManageScrollDirection)
+return ()=>window.removeEventListener("scroll", ManageScrollDirection)
+
+}, [ScrollDirection, YPos])
+
+return ScrollDirection
+}
+```
+
+### Usage
+
+```typescript
+const ScrollDirection = GetScrollDirection()
+//Will show Scroll Direction as String. Up and Down only. Defaults to Up.
+<div> {ScrollDirection} {YPos}</div>     
+```

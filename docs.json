@@ -31,10 +31,6 @@
             "pages": [
               "welcome-to-vantage-supply"
             ]
-          },
-          {
-            "group": "Your first days",
-            "pages": []
           }
         ]
       },
@@ -42,10 +38,16 @@
         "tab": "Demos",
         "groups": [
           {
-            "group": "Takumi Automotives",
+            "group": "Takumi",
             "pages": [
               "takumi-automotives",
-              "art-direction"
+              "art-direction",
+              {
+                "group": "Products",
+                "pages": [
+                  "shirts"
+                ]
+              }
             ]
           }
         ]
@@ -65,7 +67,32 @@
             "pages": [
               "gsap-utils"
             ]
+          },
+          "text-logo-component",
+          {
+            "group": "Utilities",
+            "pages": [
+              "scroll"
+            ]
           }
+        ]
+      },
+      {
+        "tab": "Vault",
+        "groups": [
+          {
+            "group": "References",
+            "pages": [
+              "design",
+              "web-dev-references"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Shopify Guides",
+        "pages": [
+          "new-shop-quick-start"
         ]
       }
     ]

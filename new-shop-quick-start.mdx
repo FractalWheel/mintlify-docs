@@ -1,0 +1,53 @@
+---
+title: "New Shop Quick Start"
+---
+
+This is a handbook of instructions on situations where you start a new Shopify shop. This will cover and go step by step on setting up the core code/apps/infrastructure to start utilizing Vantage Supply's Orion Boilerplate.
+
+## Step One - Create New Shopify Shop
+
+1. Start the new Shopify site. Go to your admin. [https://admin.shopify.com](https://admin.shopify.com)
+2. Click on the Shop name that you see on the top right and click it to open a drop down. It should say Create New Store.
+3. Click it and complete the process to create a new store.
+
+<Frame>
+  ![Screenshot (376)](/images/Screenshot-\(376\).png)
+</Frame>
+
+## Step Two - Configure Hydrogen & Sanity
+
+### Install Hydrogen App
+
+1. Go to Apps in the sidebar and search for Hydrogen. Install it.
+2. Create your storefront. Set up CI/CD for later. Create the Storefront.
+
+### Create & Configure New Sanity Project
+
+1. Go to [https://www.sanity.io/manage](https://www.sanity.io/manage)
+2. You can choose an existing organization or create a new one. For now we'll be using our Orion organization for all Demo projects.
+3. Go to manage organization
+4. Go to projects tab.
+5. Click on New Project and create a new project.
+6. After creating the project save the name and put it in the SANITY\_PROJECT\_NAME in your .env. You will need this for later.
+7. On your new project go to API.
+8. In Tokens create a new token with the viewer permission. Call it whatever you want. As a default lets call it Viewer Role. Save the token. You can save it in the boilerplate .env for now under SANITY\_API\_TOKEN. You'll need this later for the Hydrogen's storefront environment variables.
+9. Next create a new CORS origin. it is [http://localhost:3000](http://localhost:3000) with Allow Credentials checked on.
+10. Now get your your Sanity Project ID. Put it in your .env as SANITY\_PROJECT\_ID. You'll also need this later. 
+
+#### Install & Configure Sanity App in Shopify
+
+1. Go to Apps again. Search for Sanity or Sanity Connect and install it.
+2. In your Sanity Connect app click Connect with Sanity
+3. Authorize and switch over to Chrome. Mozilla Firefox isn't able to open the Sanity app in Shopify.
+4. Once authorized in the Sanity App, connect an existing project. Connect the project you just made. Dataset production.
+5. We will use the default synchronization settings for now. Start Synchronizing.
+
+### Configuring Hydrogen Storefront
+
+You'll need these things for the environment variables
+
+SANITY\_API\_TOKEN: This is the viewer role permission token that we created in the API settings in our Sanity project.
+
+## Quick Links
+
+Shopify Admin: [https://admin.shopify.com](https://admin.shopify.com)
