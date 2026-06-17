@@ -50,6 +50,49 @@ SANITY\_API\_TOKEN: This is the viewer role permission token that we created in 
 
 SANITY\_PROJECT\_ID: Get it from the Sanity Project Dashboard
 
+1. Add the items above to your Hydrogen Storefront
+
+### Testing Out Local Development
+
+- in your /web folder in Orion
+
+1. Choose you selected branch and place this code in the terminal to connect your Shopify store 
+
+<Danger>
+  Before using command make sure to copy the Sanity portion of the .env before its overwritten blankly in case some are already marked secret in Hydrogen, so it overrides them.
+</Danger>
+
+```typescript /web
+npx shopify hydrogen login
+npx shopify hydrogen env pull
+```
+
+2. Test out the shop and studio in local development
+
+#### Configure MUX
+
+Once you're in your local Sanity studio you'll quickly see that MUX isn't configured yet. Configure it with these steps.
+
+1. Go to Videos tab at the top of Your Sanity Studio
+2. Go to Configure Plugin in top right of studio below the nav
+3. There will be Dialog showing how to configure it. Pasted below this
+
+> To set up a new access token, go to your [account on ](https://dashboard.mux.com/settings/access-tokens)[mux.com](http://mux.com).
+>
+> The access token needs permissions: **Mux Video** (Full Access) and **Mux Data** (Read)\
+> To use Signed URLs, the token must also have System permissions.\
+> The credentials will be stored safely in a hidden document only available to editors.
+
+4. Go to the Mux website and go to settings → Access Tokens → Create a new token
+5. Place the new token values inside of the Mux configuration in the Sanity Mux dialog.
+6. Save the configuration and now you're ready to start importing from Mux.
+
+#### Test Out Your Shopify Store
+
+If you already have products you'd like to add, go ahead. If not let's add some test products to see if our store has set up correctly for local development.
+
+1. Add this product.csv to your shop. 
+
 ## Quick Links
 
 Shopify Admin: [https://admin.shopify.com](https://admin.shopify.com)
