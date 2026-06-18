@@ -90,9 +90,14 @@
         ]
       },
       {
-        "tab": "Shopify Guides",
-        "pages": [
-          "new-shop-quick-start"
+        "tab": "Orion",
+        "groups": [
+          {
+            "group": "Shopify Guides",
+            "pages": [
+              "new-shop-quick-start"
+            ]
+          }
         ]
       }
     ]

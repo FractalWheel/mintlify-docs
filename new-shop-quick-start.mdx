@@ -120,7 +120,37 @@ Make sure to pin the apps.
 </Note>
 
 1. Go to Online Store in Shopify Admin sidebar.
-2. 
+2. You'll see this in a since you're in a new store: 
+   <Frame>
+     ![Screenshot 2026 06 17 At 23 50 07 Vantage Supply Demo · Preferences · Shopify](/images/Screenshot-2026-06-17-at-23-50-07-Vantage-Supply-Demo-·-Preferences-·-Shopify.png)
+   </Frame>
+3. Add the store address according to the call out. If you already did this, then go to preferences and checkout store password.
+4. After adding address it'll show that you can now remove the password.
+
+<Frame>
+  ![Screenshot 2026 06 18 At 00 07 12 Vantage Supply Demo · Preferences · Shopify](/images/Screenshot-2026-06-18-at-00-07-12-Vantage-Supply-Demo-·-Preferences-·-Shopify.png)
+</Frame>
+
+#### Add Bogus Gateway Payments for Testing
+
+1. In your admin settings go to Payments.
+2. Then click on See Other Providers. 
+   <Frame>
+     ![Screenshot 2026 06 18 004857](/images/Screenshot-2026-06-18-004857.png)
+   </Frame>
+3. Select Bogus Gateway
+
+<Frame>
+  ![Screenshot 2026 06 18 012515](/images/Screenshot-2026-06-18-012515.png)
+</Frame>
+
+4. Activate the Bogus Gateway
+
+<Tip>
+  For More documentation on the Bogus Gateway go here:
+
+  [https://help.shopify.com/en/manual/checkout-settings/test-orders/payments-test-mode#bogus-gateway](https://help.shopify.com/en/manual/checkout-settings/test-orders/payments-test-mode#bogus-gateway)
+</Tip>
 
 #### Test the Additional Storefront Apps
 
@@ -128,13 +158,28 @@ Make sure to pin the apps.
 2. Create a new bundle
 3. Go to your Hydrogen code and run the development server.
 4. Test if the subscription shows and works. Run a mock simulation of buying the subscription and checking the account and admin to see if it went through.
+
+<Tip>
+  Subscriptions are bought directly from the product. There is no subscriptions route in Hydrogen.
+</Tip>
+
+<Warning>
+  Bogus Gateway does not work with subscriptions. You need to enable Shopify Payments and set it to Test Mode. Documentation is here: [https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments#enable-test-mode-for-shopify-payments](https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments#enable-test-mode-for-shopify-payments)
+</Warning>
+
 5. Test out the bundle.
 
 <Warning>
   Bundles don't automatically go active on the sales channel nor do the add themselves to the Hydrogen shop. You must do that manually.
 </Warning>
 
-6. 
+6. If everything is good continue not. If not, then debug
+
+As a checklist, make sure to see if the orders go through for the bundle and the subscription also goes through. Make sure both show in the catalog and stuff.
+
+## Conclusion
+
+With this setup you should be ready for any sort of local development.
 
 ## Quick Links
 
