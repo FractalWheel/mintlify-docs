@@ -32,7 +32,7 @@ This is a handbook of instructions on situations where you start a new Shopify s
 7. On your new project go to API.
 8. In Tokens create a new token with the viewer permission. Call it whatever you want. As a default lets call it Viewer Role. Save the token. You can save it in the boilerplate .env for now under SANITY\_API\_TOKEN. You'll need this later for the Hydrogen's storefront environment variables.
 9. Next create a new CORS origin. it is [http://localhost:3000](http://localhost:3000) with Allow Credentials checked on.
-10. Now get your your Sanity Project ID. Put it in your .env as SANITY\_PROJECT\_ID. You'll also need this later. 
+10. Now get your your Sanity Project ID. Put it in your .env as SANITY\_PROJECT\_ID. You'll also need this later.
 
 #### Install & Configure Sanity App in Shopify
 
@@ -56,7 +56,7 @@ SANITY\_PROJECT\_ID: Get it from the Sanity Project Dashboard
 
 - in your /web folder in Orion
 
-1. Choose you selected branch and place this code in the terminal to connect your Shopify store 
+1. Choose you selected branch and place this code in the terminal to connect your Shopify store
 
 <Danger>
   Before using command make sure to copy the Sanity portion of the .env before its overwritten blankly in case some are already marked secret in Hydrogen, so it overrides them.
@@ -104,12 +104,37 @@ Make sure to pin the apps.
 1. Install Shopify Subscriptions App: [https://apps.shopify.com/shopify-subscriptions](https://apps.shopify.com/shopify-subscriptions)
 2. Install Shopify Bundles App: [https://apps.shopify.com/shopify-bundles?st\_campaign=admin-search&st\_source=admin-web&utm\_campaign=admin-search&utm\_source=shopify](https://apps.shopify.com/shopify-bundles?st_campaign=admin-search&st_source=admin-web&utm_campaign=admin-search&utm_source=shopify)
 
+#### Change Hydrogen Store from Private to Public
+
+1. Go to your Hydrogen app in your admin
+2. Go to your store.
+3. Click Storefront Settings.
+4. Go to Environment and variables tab in the sidebar.
+5. Click on Production in the environments section.
+6. Set URL privacy to public.
+
+##### Remove Password Protection from Store
+
+<Note>
+  Documentation on this process here: [https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-prepare-for-launch/#remove-your-online-store-password](https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-prepare-for-launch/#remove-your-online-store-password)
+</Note>
+
+1. Go to Online Store in Shopify Admin sidebar.
+2. 
+
 #### Test the Additional Storefront Apps
 
 1. Create a new Shopify Subscription
 2. Create a new bundle
 3. Go to your Hydrogen code and run the development server.
 4. Test if the subscription shows and works. Run a mock simulation of buying the subscription and checking the account and admin to see if it went through.
+5. Test out the bundle.
+
+<Warning>
+  Bundles don't automatically go active on the sales channel nor do the add themselves to the Hydrogen shop. You must do that manually.
+</Warning>
+
+6. 
 
 ## Quick Links
 
