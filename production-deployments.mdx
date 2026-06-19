@@ -89,3 +89,42 @@ git push -u <REMOTE NAME> <CHOSEN BRANCH TO SET UPSTREAM FROM>
 </Danger>
 
 ## Step 2: Configure Production Domains for Store & Checkout
+
+You need to setup both the Checkout Domain and the Production Domain
+
+Documentation on this is here : [https://help.shopify.com/en/manual/domains/add-a-domain](https://help.shopify.com/en/manual/domains/add-a-domain)
+
+1. Go to Admin Settings → Domains
+2. Next click on Connect Existing on the top right and enter the domain you wish to use. For checkout domains use the checkout.\[domain\] for the URL. 
+3. Change the domain types to be the primary ones.
+
+## Step 3: Setup Sanity Studio
+
+1. Go to your /studio and in your terminal use
+
+```powershell
+npx sanity undeploy
+```
+
+3. If that doesn't work then delete the value of `sanityAppId `in your `QuickHardcodes.ts`
+4. Then use this command to deploy a new studio.
+
+```powershell
+npx sanity deploy
+```
+
+5. Save the App Id that is created and shown in the terminal after deployment. Put it in the your `QuickHardcodes.ts` file
+
+### Sanity Studio Hosted
+
+1. After completing the previous section your new studio should appear on your Studios & Applications tab in your Sanity Organization Dashboard.
+2. Go [https://www.sanity.io/manage](https://www.sanity.io/manage) → Choose Your Organization → Open Dashboard → Studios & Apps
+3. Get the URL of your new studio and replace the studioDomain hardcode in your `QuickHardcodes.ts` file
+
+1. Choose the organization you're working on and **open the organization dashboard**.
+2. Go to **Studio & Apps** in the sidebar.
+3. Go [https://www.sanity.io/manage](https://www.sanity.io/manage)
+
+1. Choose the project you're working on.
+2. Go to the Studio tab in your project.
+3. Add a Studio
