@@ -16,4 +16,74 @@ title: "Production Deployments Guide"
 2. Publish the Branch to Github.
 3. If you're using VSCode it should already be on the new branch now that you're using it. Keep it there.
 4. Go to your [github.com](http://github.com) repositories. Create a New GitHub Repository. Call it whatever you want, but for recognition reasons, something related to your Shopify build. Make sure its private.
-5. 
+5. Next you're going to create add a remote repository. The code below goes over this.
+
+````powershell expandable lines wrap
+The git remote add command takes two arguments:
+
+    A remote name, for example, origin
+    A remote URL, for example, https://github.com/OWNER/REPOSITORY.git
+
+For example:
+
+$ git remote add origin https://github.com/OWNER/REPOSITORY.git
+# Set a new remote
+
+$ git remote -v
+# Verify new remote
+> origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+> origin  https://github.com/OWNER/REPOSITORY.git (push)
+
+
+
+git remote add garcia git@github.com:danielgarcia/garcia-repo.git
+#              ↑           ↑              ↑              ↑
+#           nickname    SSH protocol   github username  repo name
+
+
+
+git push (chosen-partner-repo) (your-local-branch):(to-their-localbranch) --- This Command pushes to desired remote repo from our desired branch to the desired branch of theirs
+
+for example:
+
+git push PartnerRepo experimental:main
+
+```
+
+> [!WARNING]
+> MAKE SURE TO ADD YOURSELF AS A COLLABORATOR ON THEIR GITHUB REPO SO YOU CAN PUSH THE CHANGES.
+
+<code>
+# Verify it's there
+git remote -v
+</code>
+
+<code>
+# Remove Remote Repo
+git remote remove (repo name)
+</code>
+````
+
+6. These are the commands you should be using in sequence.
+
+```powershell lines wrap
+git remote add <REMOTE NAME> <REMOTE URL>
+git push -u <REMOTE NAME> <CHOSEN BRANCH TO SET UPSTREAM FROM>
+#The upstream here basically allow us to just push changes from our branch and our remote branch would also get the changes pushed as well.
+```
+
+7. After this let's push this repository to Hydrogen. Go to Hydrogen App → Storefront Settings → Oxygen Deployments
+8. Connect your Github account and your repository. 
+9. Create a new Oxygen Deplyoment token. It is in the Oxygen Deployments Section
+10. Go to your Github Repo that's connected to your Hydrogen project then → Settings → Secrets & Variables → Actions.
+11. Now use the token value that you created and place it in the Repository Secrets. Call it `SHOPIFY_HYDROGEN_DEPLOYMENT_TOKEN`
+
+<Danger>
+  MAKE SURE YOUR ENVIRONMENT VARIABLES IN HYDROGEN ARE SET OR NOTHING WILL WORK IN PROD OR PREVIEW. 
+
+  You need these:
+
+  **SANITY\_API\_TOKEN**: This is the viewer role permission token that we created in the API settings in our Sanity project.
+
+  **SANITY\_PROJECT\_ID**: Get it from the Sanity Project Dashboard
+</Danger>

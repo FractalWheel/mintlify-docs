@@ -98,6 +98,12 @@
               "new-shop-quick-start",
               "production-deployments"
             ]
+          },
+          {
+            "group": "Specifications",
+            "pages": [
+              "current-capabilities"
+            ]
           }
         ]
       }
