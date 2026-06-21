@@ -91,7 +91,7 @@
       },
       {
         "tab": "Orion",
-        "groups": [
+        "pages": [
           {
             "group": "Specifications",
             "pages": [
@@ -104,7 +104,8 @@
               "new-shop-quick-start",
               "production-deployments"
             ]
-          }
+          },
+          "welcome-to-orion"
         ]
       }
     ]
