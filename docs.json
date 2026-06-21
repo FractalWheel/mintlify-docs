@@ -92,20 +92,14 @@
       {
         "tab": "Orion",
         "pages": [
-          {
-            "group": "Specifications",
-            "pages": [
-              "current-capabilities"
-            ]
-          },
+          "welcome-to-orion",
           {
             "group": "Shopify Guides",
             "pages": [
               "new-shop-quick-start",
               "production-deployments"
             ]
-          },
-          "welcome-to-orion"
+          }
         ]
       }
     ]
