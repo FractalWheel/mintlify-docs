@@ -35,18 +35,6 @@
         ]
       },
       {
-        "tab": "Vault",
-        "groups": [
-          {
-            "group": "References",
-            "pages": [
-              "design",
-              "web-dev-references"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Orion",
         "pages": [
           "welcome-to-orion",
@@ -98,6 +86,18 @@
                   "scroll"
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Vault",
+        "groups": [
+          {
+            "group": "References",
+            "pages": [
+              "design",
+              "web-dev-references"
             ]
           }
         ]
