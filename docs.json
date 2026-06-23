@@ -31,6 +31,12 @@
             "pages": [
               "welcome-to-vantage-supply"
             ]
+          },
+          {
+            "group": "Official Branding",
+            "pages": [
+              "vantage-supply-design"
+            ]
           }
         ]
       },
