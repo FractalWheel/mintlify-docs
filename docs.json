@@ -22,76 +22,40 @@
     "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
   },
   "navigation": {
-    "anchors": [
+    "tabs": [
       {
-        "anchor": "Untitled Anchor",
-        "tabs": [
+        "tab": "Home Base",
+        "pages": [
+          "welcome-to-vantage",
           {
-            "tab": "Home Base",
-            "dropdowns": [
-              {
-                "dropdown": "Untitled Dropdown",
-                "anchors": [
-                  {
-                    "anchor": "Untitled Anchor",
-                    "pages": [
-                      "page"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
+            "group": "Design Guidelines",
+            "pages": []
+          }
+        ]
+      },
+      {
+        "tab": "Orion",
+        "pages": [
+          "welcome-to-orion",
           {
-            "tab": "Orion",
+            "group": "Shopify Guides",
             "pages": [
-              "welcome-to-orion",
+              "new-shop-quick-start",
+              "production-deployments"
+            ]
+          },
+          {
+            "group": "Demos",
+            "pages": [
               {
-                "group": "Shopify Guides",
+                "group": "Takumi",
                 "pages": [
-                  "new-shop-quick-start",
-                  "production-deployments"
-                ]
-              },
-              {
-                "group": "Demos",
-                "pages": [
+                  "takumi-automotives",
+                  "art-direction",
                   {
-                    "group": "Takumi",
+                    "group": "Products",
                     "pages": [
-                      "takumi-automotives",
-                      "art-direction",
-                      {
-                        "group": "Products",
-                        "pages": [
-                          "shirts"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Code Snippets",
-                "pages": [
-                  "start-here",
-                  "text-logo-component",
-                  {
-                    "group": "GSAP",
-                    "pages": [
-                      "gsap-utils"
-                    ]
-                  },
-                  {
-                    "group": "Footer",
-                    "pages": [
-                      "sticky-footer"
-                    ]
-                  },
-                  {
-                    "group": "Utilities",
-                    "pages": [
-                      "scroll"
+                      "shirts"
                     ]
                   }
                 ]
@@ -99,15 +63,40 @@
             ]
           },
           {
-            "tab": "Vault",
-            "groups": [
+            "group": "Code Snippets",
+            "pages": [
+              "start-here",
+              "text-logo-component",
               {
-                "group": "References",
+                "group": "GSAP",
                 "pages": [
-                  "design",
-                  "web-dev-references"
+                  "gsap-utils"
+                ]
+              },
+              {
+                "group": "Footer",
+                "pages": [
+                  "sticky-footer"
+                ]
+              },
+              {
+                "group": "Utilities",
+                "pages": [
+                  "scroll"
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Vault",
+        "groups": [
+          {
+            "group": "References",
+            "pages": [
+              "design",
+              "web-dev-references"
             ]
           }
         ]
