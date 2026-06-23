@@ -22,46 +22,20 @@
     "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
   },
   "navigation": {
-    "tabs": [
+    "anchors": [
       {
-        "tab": "Home Base",
-        "dropdowns": [
+        "anchor": "Untitled Anchor",
+        "tabs": [
           {
-            "dropdown": "Untitled Dropdown",
-            "anchors": [
+            "tab": "Home Base",
+            "dropdowns": [
               {
-                "anchor": "Untitled Anchor",
-                "pages": [
-                  "page"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Orion",
-        "pages": [
-          "welcome-to-orion",
-          {
-            "group": "Shopify Guides",
-            "pages": [
-              "new-shop-quick-start",
-              "production-deployments"
-            ]
-          },
-          {
-            "group": "Demos",
-            "pages": [
-              {
-                "group": "Takumi",
-                "pages": [
-                  "takumi-automotives",
-                  "art-direction",
+                "dropdown": "Untitled Dropdown",
+                "anchors": [
                   {
-                    "group": "Products",
+                    "anchor": "Untitled Anchor",
                     "pages": [
-                      "shirts"
+                      "page"
                     ]
                   }
                 ]
@@ -69,40 +43,71 @@
             ]
           },
           {
-            "group": "Code Snippets",
+            "tab": "Orion",
             "pages": [
-              "start-here",
-              "text-logo-component",
+              "welcome-to-orion",
               {
-                "group": "GSAP",
+                "group": "Shopify Guides",
                 "pages": [
-                  "gsap-utils"
+                  "new-shop-quick-start",
+                  "production-deployments"
                 ]
               },
               {
-                "group": "Footer",
+                "group": "Demos",
                 "pages": [
-                  "sticky-footer"
+                  {
+                    "group": "Takumi",
+                    "pages": [
+                      "takumi-automotives",
+                      "art-direction",
+                      {
+                        "group": "Products",
+                        "pages": [
+                          "shirts"
+                        ]
+                      }
+                    ]
+                  }
                 ]
               },
               {
-                "group": "Utilities",
+                "group": "Code Snippets",
                 "pages": [
-                  "scroll"
+                  "start-here",
+                  "text-logo-component",
+                  {
+                    "group": "GSAP",
+                    "pages": [
+                      "gsap-utils"
+                    ]
+                  },
+                  {
+                    "group": "Footer",
+                    "pages": [
+                      "sticky-footer"
+                    ]
+                  },
+                  {
+                    "group": "Utilities",
+                    "pages": [
+                      "scroll"
+                    ]
+                  }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Vault",
-        "groups": [
+          },
           {
-            "group": "References",
-            "pages": [
-              "design",
-              "web-dev-references"
+            "tab": "Vault",
+            "groups": [
+              {
+                "group": "References",
+                "pages": [
+                  "design",
+                  "web-dev-references"
+                ]
+              }
             ]
           }
         ]
