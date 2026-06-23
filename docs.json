@@ -24,7 +24,25 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Home Base"
+        "tab": "Home Base",
+        "dropdowns": [
+          {
+            "dropdown": "Untitled Dropdown",
+            "tabs": [
+              {
+                "tab": "ttab",
+                "products": [
+                  {
+                    "product": "product",
+                    "pages": [
+                      "product"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "tab": "Orion",
