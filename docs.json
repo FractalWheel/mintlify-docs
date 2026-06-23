@@ -24,6 +24,9 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Home Base"
+      },
+      {
         "tab": "Orion",
         "pages": [
           "welcome-to-orion",
@@ -90,9 +93,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Home Base"
       }
     ]
   },
