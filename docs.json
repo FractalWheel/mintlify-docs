@@ -29,7 +29,10 @@
           "welcome-to-vantage",
           {
             "group": "Design Guidelines",
-            "pages": []
+            "pages": [
+              "vantage-supply-official-branding",
+              "orion-brand-guidelines"
+            ]
           }
         ]
       },
