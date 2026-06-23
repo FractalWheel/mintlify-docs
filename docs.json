@@ -24,23 +24,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Home Base",
-        "groups": [
-          {
-            "group": "Welcome",
-            "pages": [
-              "welcome-to-vantage-supply"
-            ]
-          },
-          {
-            "group": "Official Branding",
-            "pages": [
-              "vantage-supply-brand-guidelines"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Orion",
         "pages": [
           "welcome-to-orion",
