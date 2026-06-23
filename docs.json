@@ -30,7 +30,10 @@
             "dropdown": "Untitled Dropdown",
             "anchors": [
               {
-                "anchor": "Untitled Anchor"
+                "anchor": "Untitled Anchor",
+                "pages": [
+                  "page"
+                ]
               }
             ]
           }
