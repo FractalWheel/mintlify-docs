@@ -35,31 +35,6 @@
         ]
       },
       {
-        "tab": "Code Snippets",
-        "pages": [
-          "start-here",
-          {
-            "group": "Footer",
-            "pages": [
-              "sticky-footer"
-            ]
-          },
-          {
-            "group": "GSAP",
-            "pages": [
-              "gsap-utils"
-            ]
-          },
-          "text-logo-component",
-          {
-            "group": "Utilities",
-            "pages": [
-              "scroll"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Vault",
         "groups": [
           {
@@ -96,6 +71,31 @@
                       "shirts"
                     ]
                   }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Code Snippets",
+            "pages": [
+              "start-here",
+              "text-logo-component",
+              {
+                "group": "GSAP",
+                "pages": [
+                  "gsap-utils"
+                ]
+              },
+              {
+                "group": "Footer",
+                "pages": [
+                  "sticky-footer"
+                ]
+              },
+              {
+                "group": "Utilities",
+                "pages": [
+                  "scroll"
                 ]
               }
             ]
