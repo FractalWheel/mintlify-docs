@@ -28,17 +28,9 @@
         "dropdowns": [
           {
             "dropdown": "Untitled Dropdown",
-            "tabs": [
+            "anchors": [
               {
-                "tab": "ttab",
-                "products": [
-                  {
-                    "product": "product",
-                    "pages": [
-                      "product"
-                    ]
-                  }
-                ]
+                "anchor": "Untitled Anchor"
               }
             ]
           }
