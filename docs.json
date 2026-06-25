@@ -95,6 +95,18 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "Design Guide",
+            "pages": [
+              {
+                "group": "Lottie",
+                "pages": [
+                  "index",
+                  "lottie-exporting-and-testing"
+                ]
+              }
+            ]
           }
         ]
       },
