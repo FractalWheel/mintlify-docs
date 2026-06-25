@@ -87,6 +87,12 @@
                 "pages": [
                   "scroll"
                 ]
+              },
+              {
+                "group": "Hydrogen",
+                "pages": [
+                  "filtering"
+                ]
               }
             ]
           }
