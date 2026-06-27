@@ -48,24 +48,6 @@
             ]
           },
           {
-            "group": "Demos",
-            "pages": [
-              {
-                "group": "Takumi",
-                "pages": [
-                  "takumi-automotives",
-                  "art-direction",
-                  {
-                    "group": "Products",
-                    "pages": [
-                      "shirts"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "group": "Code Snippets",
             "pages": [
               "start-here",
@@ -92,6 +74,28 @@
                 "group": "Hydrogen",
                 "pages": [
                   "filtering"
+                ]
+              },
+              {
+                "group": "Typography & Fonts",
+                "pages": []
+              }
+            ]
+          },
+          {
+            "group": "Demos",
+            "pages": [
+              {
+                "group": "Takumi",
+                "pages": [
+                  "takumi-automotives",
+                  "art-direction",
+                  {
+                    "group": "Products",
+                    "pages": [
+                      "shirts"
+                    ]
+                  }
                 ]
               }
             ]
