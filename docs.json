@@ -74,10 +74,7 @@
                 "group": "Hydrogen",
                 "pages": [
                   "filtering",
-                  {
-                    "group": "Typography & Fonts",
-                    "pages": []
-                  }
+                  "handling-fonts"
                 ]
               }
             ]

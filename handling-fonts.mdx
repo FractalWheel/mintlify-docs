@@ -1,0 +1,37 @@
+---
+title: "Handling Fonts"
+---
+
+Handling Fonts can be tricky so I'm streamlining the process. Remix sort of sucks in the sense that in order to do one thing you have to apply the changes in multiple places. 
+
+This page is a guide to handle fonts as seamlessly as possible. 
+
+Typography is hands down one of the most important parts of a design structure. Getting this right and getting this done is very important. 
+
+## Recommended Documentation
+
+This pretty much goes over everything. But our use case might slightly diverge a bit given the amount of exposition I have to give to be clear about how to configure this. 
+
+[https://www.nikolailehbr.ink/blog/fonts-remix-react-router-7#using-a-local-font-file](https://www.nikolailehbr.ink/blog/fonts-remix-react-router-7#using-a-local-font-file)
+
+## Configuring Local Fonts
+
+_For this example we'll be using the Switzer font._
+
+### 1. Import Fonts to Your Fonts Folder
+
+The Fonts Folder will be in your Public Folder in the Web path.
+
+You will have to make a new folder with the Font Name as to make things structured aesthetically and for seamless structured usage.
+
+The path will look like this `/web/public/fonts/{FONTNAME}/{FONTFILE}`
+
+### 2. Configure your TailwindCSS file
+
+#### 1. Go to your TailwindCSS styles file.
+
+You'll find it in `web\app\styles\tailwind.css` 
+
+#### 2. Add a @font-face rule
+
+Documentation Here → [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face)
