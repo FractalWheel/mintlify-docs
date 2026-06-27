@@ -73,12 +73,12 @@
               {
                 "group": "Hydrogen",
                 "pages": [
-                  "filtering"
+                  "filtering",
+                  {
+                    "group": "Typography & Fonts",
+                    "pages": []
+                  }
                 ]
-              },
-              {
-                "group": "Typography & Fonts",
-                "pages": []
               }
             ]
           },
