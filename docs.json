@@ -48,6 +48,13 @@
             ]
           },
           {
+            "group": "Shopify Hydrogen",
+            "pages": [
+              "filtering",
+              "handling-fonts"
+            ]
+          },
+          {
             "group": "Code Snippets",
             "pages": [
               "start-here",
@@ -68,13 +75,6 @@
                 "group": "Utilities",
                 "pages": [
                   "scroll"
-                ]
-              },
-              {
-                "group": "Hydrogen",
-                "pages": [
-                  "filtering",
-                  "handling-fonts"
                 ]
               }
             ]
