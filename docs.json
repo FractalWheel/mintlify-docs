@@ -145,7 +145,10 @@
           "welcome-to-condor",
           {
             "group": "Utilities",
-            "pages": []
+            "pages": [
+              "say-only-whats-necessary",
+              "keep-things-shallow"
+            ]
           },
           {
             "group": "Psychological Warfare",
@@ -162,8 +165,6 @@
           {
             "group": "Information Control",
             "pages": [
-              "keep-things-shallow",
-              "say-only-whats-necessary",
               {
                 "group": "Social Outcome Engineering",
                 "pages": [
