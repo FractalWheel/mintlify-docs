@@ -163,7 +163,14 @@
             "group": "Information Control",
             "pages": [
               "keep-things-shallow",
-              "say-only-whats-necessary"
+              "say-only-whats-necessary",
+              {
+                "group": "Social Outcome Engineering",
+                "pages": [
+                  "intro",
+                  "sterilizing-outputs"
+                ]
+              }
             ]
           }
         ]
