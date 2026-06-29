@@ -161,7 +161,10 @@
           },
           {
             "group": "Information Control",
-            "pages": []
+            "pages": [
+              "keep-things-shallow",
+              "say-only-whats-necessary"
+            ]
           }
         ]
       }
