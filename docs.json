@@ -51,7 +51,17 @@
             "group": "Shopify Hydrogen",
             "pages": [
               "filtering",
-              "handling-fonts"
+              {
+                "group": "Sanity x Hydrogen",
+                "pages": []
+              },
+              {
+                "group": "Guides",
+                "pages": [
+                  "handling-fonts",
+                  "fetching-content"
+                ]
+              }
             ]
           },
           {
@@ -120,6 +130,22 @@
               "design",
               "web-dev-references"
             ]
+          }
+        ]
+      },
+      {
+        "tab": "Notes",
+        "pages": [
+          "a-vessel-of-distribution"
+        ]
+      },
+      {
+        "tab": "Condor",
+        "pages": [
+          "welcome-to-condor",
+          {
+            "group": "Utilities",
+            "pages": []
           }
         ]
       }
