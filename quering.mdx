@@ -1,0 +1,118 @@
+---
+title: "Fetching & Querying "
+---
+
+There are two main ways to get Sanity data into Hydrogen. There's the Sanity documentation way and there is the Hydrogen specific way. We'll document both but we recommend using the official Hydrogen way.
+
+Here is docs on querying Sanity data → [https://www.sanity.io/docs/content-lake/how-queries-work](https://www.sanity.io/docs/content-lake/how-queries-work)
+
+## Using Sanity's Query
+
+Docs are Here → [https://github.com/sanity-io/hydrogen-sanity#interacting-with-sanity-data](https://github.com/sanity-io/hydrogen-sanity#interacting-with-sanity-data)
+
+### **Step 1: Fetch data in your loader with** `query`
+
+```typescript expandable
+import {defineQuery} from 'groq'
+
+const HOMEPAGE_QUERY = defineQuery(`*[_id == "home"][0]{
+  _id,
+  title,
+  hero {
+    title,
+    description,
+    image {
+      asset->{
+        _id,
+        url
+      },
+      alt
+    }
+  },
+  modules[] {
+    _type,
+    _type == "productShowcase" => {
+      products[]-> {
+        _id,
+        store {
+          title,
+          slug,
+          previewImageUrl
+        }
+      }
+    }
+  }
+}`)
+
+export async function loader({context}: LoaderFunctionArgs) {
+  const initial = await context.sanity.query(HOMEPAGE_QUERY, undefined, {
+    tag: 'homepage',
+    hydrogen: {debug: {displayName: 'query Homepage'}},
+  })
+
+  return {initial}
+}
+```
+
+## **Step 2: Render with the** `Query `**component**
+
+Notes:
+
+- The query in Query is based off your Query that you defined from Sanity. Use the tag in the parameters and what not. You'll get the hang of it. Good luck man this is fucking cancer as fuck. 
+
+<Info>
+  The `encodeDataAttribute` function enables click-to-edit functionality in Sanity Studio's Presentation tool. It's only available when Sanity preview mode is active (managed via preview session) and returns `undefined` otherwise.
+</Info>
+
+```typescript expandable
+import {Query} from 'hydrogen-sanity'
+
+export default function HomePage({loaderData}: {loaderData: {initial: any}}) {
+  const {initial} = loaderData
+
+  return (
+    <Query query={HOMEPAGE_QUERY} options={{initial}}>
+      {(homepage, encodeDataAttribute) => (
+        <div>
+          <h1>{homepage?.hero?.title}</h1>
+          <p>{homepage?.hero?.description}</p>
+
+          {homepage?.modules?.map((module) => {
+            switch (module._type) {
+              case 'productShowcase':
+                return (
+                  <div
+                    key={module._key}
+                    data-sanity={encodeDataAttribute(['modules', {_key: module._key}, '_type'])}
+                  >
+                    <div className="products">
+                      {module.products?.map((product) => (
+                        <div key={product._id}>
+                          <h3>{product.store?.title}</h3>
+                          {product.store?.slug && (
+                            <Link to={`/products/${product.store.slug}`}>View Product</Link>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )
+
+              default:
+                return null
+            }
+          })}
+        </div>
+      )}
+    </Query>
+  )
+}
+```
+
+## Related Documentation
+
+- [https://github.com/sanity-io/hydrogen-sanity](https://github.com/sanity-io/hydrogen-sanity)
+
+On Querying → [https://github.com/sanity-io/hydrogen-sanity#interacting-with-sanity-data](https://github.com/sanity-io/hydrogen-sanity#interacting-with-sanity-data)
+
+On Fetching → 

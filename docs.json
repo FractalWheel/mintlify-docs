@@ -50,10 +50,13 @@
           {
             "group": "Shopify Hydrogen",
             "pages": [
+              "understanding-data-flow",
               "filtering",
               {
                 "group": "Sanity x Hydrogen",
-                "pages": []
+                "pages": [
+                  "quering"
+                ]
               },
               {
                 "group": "Guides",
@@ -61,7 +64,8 @@
                   "handling-fonts",
                   "fetching-content"
                 ]
-              }
+              },
+              "production"
             ]
           },
           {
@@ -118,6 +122,12 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "Google E-commerce",
+            "pages": [
+              "docs"
+            ]
           }
         ]
       },
@@ -129,6 +139,12 @@
             "pages": [
               "design",
               "web-dev-references"
+            ]
+          },
+          {
+            "group": "Automotives",
+            "pages": [
+              "design-companies"
             ]
           }
         ]
@@ -173,7 +189,8 @@
                 ]
               }
             ]
-          }
+          },
+          "communicative-counter-defense"
         ]
       }
     ]
