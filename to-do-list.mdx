@@ -13,6 +13,16 @@ Keeping this simple for now as I scaffold this up - Nizh Thunyakij
 
 ## Exploration Logs
 
-<Update label="07/22/2026">
+<Update label="07/22/2026" description="Entering The Fray. Log by Nizh Thunyakij - Founder">
   ## Log One
+
+  I've noticed that Shopify adds two things to Sanity that isn't native to Sanity. Both are due to directly connecting Sanity to the Shopify app obviously. 
+
+  What happens on Connect: 
+
+  1. A Sanity API Token is created with Editor Permissions
+  2. A webhook is created. Uses HTTP POST request method. It says it's managed by the system? Will find out more about this in a bit. It specifically looks for this in the filter. It triggers on all criteria. → Triggers on Create, Update, Delete.
+     ```graphql
+     _type in ['product', 'productVariant', 'collection', 'home', 'settings'] && !delta::changedOnly((store))
+     ```
 </Update>
