@@ -21,8 +21,7 @@ Keeping this simple for now as I scaffold this up - Nizh Thunyakij
   What happens on Connect:
 
   1. A Sanity API Token is created with Editor Permissions
-  2. A webhook is created. Uses HTTP POST request method. It says it's managed by the system? Will find out more about this in a bit. It specifically looks for this in the filter. It triggers on all criteria. → Triggers on Create, Update, Delete.
-     ```graphql
-     _type in ['product', 'productVariant', 'collection', 'home', 'settings'] && !delta::changedOnly((store))
-     ```
+  2. A webhook is created. Uses HTTP POST request method. It says it's managed by the system? Will find out more about this in a bit. It specifically looks for this in the filter → `_type in ['product', 'productVariant', 'collection', 'home', 'settings'] && !delta::changedOnly((store))` . It triggers on all criteria. → Triggers on Create, Update, Delete. 
+
+  But yeah that summarizes it. Our first goal will be creating these two things first and foremost. Will update later when I have more - End current log at 9:20AM.
 </Update>
