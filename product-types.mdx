@@ -1,0 +1,19 @@
+---
+title: "Filtering by Categories"
+---
+
+This is going to be annoying so we're going to attempt to do this in multiple viable strategies as there seems to be no official way to do this. 
+
+It seems common to filter by product types. Product types according to Shopify is a custom category for a product. Note that this doesn't apply to a collection itself. For a collection we'd have to a make a filter rule.
+
+The [shopify.supply](http://shopify.supply) and [ladygaga.com](http://ladygaga.com) websites both have examples of product types being used as a collection filter. We'll be deep diving into the implementations of both of them.
+
+So basically they're filtering by product types.
+
+According to Shopify you can expect things to look like this.
+
+> (categories = product types) ≠  tags
+
+This is going to be a lot more complicated later on when scaffolding custom routes.
+
+Its imperative that we make sure in our service demonstrations that we acknowledge these aspects especially since we're creating our own Sanity Connect app.

@@ -55,7 +55,8 @@
               {
                 "group": "Sanity x Hydrogen",
                 "pages": [
-                  "quering"
+                  "quering",
+                  "product-types"
                 ]
               },
               {
@@ -127,6 +128,14 @@
             "group": "Google E-commerce",
             "pages": [
               "docs"
+            ]
+          },
+          {
+            "group": "_Aggregate Connect",
+            "pages": [
+              "status",
+              "to-do-list",
+              "mechanisms"
             ]
           }
         ]
