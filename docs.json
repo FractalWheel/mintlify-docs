@@ -74,8 +74,7 @@
             "group": "Configuring Project",
             "pages": [
               "new-shop-quick-start",
-              "production-deployments",
-              "refreshing-sanity-data"
+              "production-deployments"
             ]
           },
           {
@@ -85,9 +84,9 @@
                 "group": "Guides",
                 "pages": [
                   "handling-fonts",
-                  "fetching-content",
                   "filtering",
-                  "quering"
+                  "quering",
+                  "refreshing-sanity-data"
                 ]
               },
               "production",
