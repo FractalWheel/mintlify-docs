@@ -165,40 +165,7 @@
         ]
       },
       {
-        "tab": "Condor",
-        "pages": [
-          {
-            "group": "Utilities",
-            "pages": [
-              "say-only-whats-necessary",
-              "keep-things-shallow"
-            ]
-          },
-          {
-            "group": "Psychological Warfare",
-            "pages": []
-          },
-          {
-            "group": "Internal Organization Tactics",
-            "pages": []
-          },
-          {
-            "group": "Sales Engineering",
-            "pages": []
-          },
-          {
-            "group": "Information Control",
-            "pages": [
-              {
-                "group": "Social Outcome Engineering",
-                "pages": [
-                  "intro",
-                  "sterilizing-outputs"
-                ]
-              }
-            ]
-          }
-        ]
+        "tab": "Condor"
       },
       {
         "tab": "Aggregate",
