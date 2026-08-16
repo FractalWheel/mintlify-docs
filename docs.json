@@ -45,6 +45,24 @@
             "pages": [
               "a-vessel-of-distribution"
             ]
+          },
+          {
+            "group": "Vault",
+            "pages": [
+              {
+                "group": "References",
+                "pages": [
+                  "design",
+                  "web-dev-references"
+                ]
+              },
+              {
+                "group": "Automotives",
+                "pages": [
+                  "design-companies"
+                ]
+              }
+            ]
           }
         ]
       },
@@ -142,24 +160,6 @@
             "group": "Google E-commerce",
             "pages": [
               "docs"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Vault",
-        "groups": [
-          {
-            "group": "References",
-            "pages": [
-              "design",
-              "web-dev-references"
-            ]
-          },
-          {
-            "group": "Automotives",
-            "pages": [
-              "design-companies"
             ]
           }
         ]
