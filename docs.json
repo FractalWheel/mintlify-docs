@@ -44,7 +44,8 @@
             "group": "Shopify Guides",
             "pages": [
               "new-shop-quick-start",
-              "production-deployments"
+              "production-deployments",
+              "refreshing-sanity-data"
             ]
           },
           {
@@ -129,14 +130,6 @@
             "pages": [
               "docs"
             ]
-          },
-          {
-            "group": "_Aggregate Connect",
-            "pages": [
-              "status",
-              "to-do-list",
-              "mechanisms"
-            ]
           }
         ]
       },
@@ -167,7 +160,6 @@
       {
         "tab": "Condor",
         "pages": [
-          "welcome-to-condor",
           {
             "group": "Utilities",
             "pages": [
@@ -198,8 +190,15 @@
                 ]
               }
             ]
-          },
-          "communicative-counter-defense"
+          }
+        ]
+      },
+      {
+        "tab": "Aggregate",
+        "pages": [
+          "status",
+          "to-do-list",
+          "mechanisms"
         ]
       }
     ]
