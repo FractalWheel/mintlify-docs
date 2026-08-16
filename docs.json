@@ -54,13 +54,6 @@
               "understanding-data-flow",
               "filtering",
               {
-                "group": "Sanity x Hydrogen",
-                "pages": [
-                  "quering",
-                  "product-types"
-                ]
-              },
-              {
                 "group": "Guides",
                 "pages": [
                   "handling-fonts",
@@ -81,9 +74,17 @@
                         "pages": [
                           "shirts"
                         ]
-                      }
+                      },
+                      "art-direction"
                     ]
                   }
+                ]
+              },
+              {
+                "group": "Sanity x Hydrogen",
+                "pages": [
+                  "quering",
+                  "product-types"
                 ]
               }
             ]
@@ -196,9 +197,7 @@
       {
         "tab": "Aggregate",
         "pages": [
-          "status",
-          "to-do-list",
-          "mechanisms"
+          "status"
         ]
       }
     ]
