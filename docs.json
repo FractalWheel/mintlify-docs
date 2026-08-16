@@ -71,7 +71,7 @@
         "pages": [
           "welcome-to-orion",
           {
-            "group": "Shopify Guides",
+            "group": "Configuring Project",
             "pages": [
               "new-shop-quick-start",
               "production-deployments",
@@ -81,13 +81,13 @@
           {
             "group": "Shopify Hydrogen",
             "pages": [
-              "understanding-data-flow",
-              "filtering",
               {
                 "group": "Guides",
                 "pages": [
                   "handling-fonts",
-                  "fetching-content"
+                  "fetching-content",
+                  "filtering",
+                  "quering"
                 ]
               },
               "production",
@@ -113,8 +113,13 @@
               {
                 "group": "Sanity x Hydrogen",
                 "pages": [
-                  "quering",
                   "product-types"
+                ]
+              },
+              {
+                "group": "Learn",
+                "pages": [
+                  "understanding-data-flow"
                 ]
               }
             ]
