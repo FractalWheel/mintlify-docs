@@ -28,10 +28,16 @@
         "pages": [
           "welcome-to-vantage",
           {
-            "group": "Design Guidelines",
+            "group": "Direction",
             "pages": [
-              "vantage-supply-official-branding",
-              "orion-brand-guidelines"
+              "untitled-page",
+              {
+                "group": "Design Guidelines",
+                "pages": [
+                  "vantage-supply-official-branding",
+                  "orion-brand-guidelines"
+                ]
+              }
             ]
           }
         ]
