@@ -39,6 +39,12 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "Notes",
+            "pages": [
+              "a-vessel-of-distribution"
+            ]
           }
         ]
       },
@@ -156,12 +162,6 @@
               "design-companies"
             ]
           }
-        ]
-      },
-      {
-        "tab": "Notes",
-        "pages": [
-          "a-vessel-of-distribution"
         ]
       },
       {
