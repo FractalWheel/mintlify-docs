@@ -74,7 +74,9 @@
             "group": "Configuring Project",
             "pages": [
               "new-shop-quick-start",
-              "production-deployments"
+              "production-deployments",
+              "untitled-page-2",
+              "untitled-page-3"
             ]
           },
           {
@@ -86,10 +88,10 @@
                   "handling-fonts",
                   "filtering",
                   "quering",
-                  "refreshing-sanity-data"
+                  "refreshing-sanity-data",
+                  "product-types"
                 ]
               },
-              "production",
               {
                 "group": "Demos",
                 "pages": [
@@ -107,12 +109,6 @@
                       "art-direction"
                     ]
                   }
-                ]
-              },
-              {
-                "group": "Sanity x Hydrogen",
-                "pages": [
-                  "product-types"
                 ]
               },
               {
