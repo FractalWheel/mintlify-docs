@@ -1,3 +1,52 @@
 ---
 title: "Production Ready Checklist"
 ---
+
+## Env Variables
+
+**SANITY\_API\_TOKEN**: This is the viewer role permission token that we created in the API settings in our Sanity project.
+
+**SANITY\_PROJECT\_ID**: Get it from the Sanity Project Dashboard
+
+## **Shopify Apps**
+
+You should have these installed:
+
+- Sanity Connect App 
+- Bundles
+- Subscriptions
+- Klaviyo
+- Search & Discovery
+
+Maybe Collective, app. But these should be it.
+
+## Mini Guides
+
+### Sanity Connect
+
+1. Connect Sanity to Existing Project through Sanity Connect App
+2. Choose Sync (Default Sync is fine for now)
+3. Add `http://localhost:3000 `to your CORS Origin in your Sanity Project and **Allow Credentials.**
+4. Create a new token. Viewer Role, call it Viewer. Get the token and it to your Hydrogen Storefront. 
+
+### Hydrogen Guide
+
+1. Download the Hydrogen App in Shopify Admin.
+
+**SANITY\_API\_TOKEN**: This is the viewer role permission token that we created in the API settings in our Sanity project.
+
+**SANITY\_PROJECT\_ID**: Get it from the Sanity Project Dashboard
+
+### Github Actions
+
+Create new oxygen deployment token. in your Shopify Admin in your Hydrogen App. Its in the Oxygen Deployments.
+
+Add this to your actions env. in github in the remote repository or testing repo. Needs to be an environment secret. **SHOPIFY\_HYDROGEN\_DEPLOYMENT\_TOKEN**
+
+### Analytics
+
+#### Google Tags
+
+1. Enable Customer Privacy / Cookie Consent Banner
+2. In the Shopify admin, navigate to Settings → Customer Privacy → Cookie Banner: \+ \+- Configure region visibility for the banner \+- Customize banner appearance and position (optional) \+- Set up cookie preferences
+3.  Configuration Requirements - [Configure customer privacy settings](https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings/privacy-settings) - Manage privacy settings to comply with data protection laws \+- [Add a cookie banner](https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings/privacy-settings#add-a-cookie-banner) - Display consent notifications for data collection \+
