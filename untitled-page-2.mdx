@@ -2,6 +2,10 @@
 title: "Production Ready Checklist"
 ---
 
+High Level Quick Links:
+
+- [https://admin.shopify.com/](https://admin.shopify.com/)
+
 ## Env Variables
 
 **SANITY\_API\_TOKEN**: This is the viewer role permission token that we created in the API settings in our Sanity project.
@@ -12,7 +16,7 @@ title: "Production Ready Checklist"
 
 You should have these installed:
 
-- Sanity Connect App 
+- Sanity Connect App
 - Bundles
 - Subscriptions
 - Klaviyo
@@ -27,7 +31,7 @@ Maybe Collective, app. But these should be it.
 1. Connect Sanity to Existing Project through Sanity Connect App
 2. Choose Sync (Default Sync is fine for now)
 3. Add `http://localhost:3000 `to your CORS Origin in your Sanity Project and **Allow Credentials.**
-4. Create a new token. Viewer Role, call it Viewer. Get the token and it to your Hydrogen Storefront. 
+4. Create a new token. Viewer Role, call it Viewer. Get the token and it to your Hydrogen Storefront.
 
 ### Hydrogen Guide
 
@@ -47,6 +51,66 @@ Add this to your actions env. in github in the remote repository or testing repo
 
 #### Google Tags
 
+Quick Links:
+
+- [https://analytics.google.com](https://analytics.google.com)
+- [https://tagmanager.google.com](https://tagmanager.google.com)
+- [https://shopify.dev/docs/storefronts/headless/hydrogen/cookbook/gtm#requirements](https://shopify.dev/docs/storefronts/headless/hydrogen/cookbook/gtm#requirements)
+- [https://dash.cloudflare.com](https://dash.cloudflare.com)
+
 1. Enable Customer Privacy / Cookie Consent Banner
 2. In the Shopify admin, navigate to Settings → Customer Privacy → Cookie Banner: \+ \+- Configure region visibility for the banner \+- Customize banner appearance and position (optional) \+- Set up cookie preferences
-3.  Configuration Requirements - [Configure customer privacy settings](https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings/privacy-settings) - Manage privacy settings to comply with data protection laws \+- [Add a cookie banner](https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings/privacy-settings#add-a-cookie-banner) - Display consent notifications for data collection \+
+3. Configuration Requirements - [Configure customer privacy settings](https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings/privacy-settings) - Manage privacy settings to comply with data protection laws \+- [Add a cookie banner](https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings/privacy-settings#add-a-cookie-banner) - Display consent notifications for data collection
+
+Notes: Testing out the store sub-domain. We need to add the subdomains.
+
+Go to domains in your admin and follow this to guide to configure it → [https://shopify.dev/docs/storefronts/headless/hydrogen/migrate/redirect-traffic](https://shopify.dev/docs/storefronts/headless/hydrogen/migrate/redirect-traffic)
+
+Then after lets use the custom hydrogen liquid theme to redirect traffic from the shopify store to your hydrogen one. [https://github.com/shopify/hydrogen-redirect-theme](https://github.com/shopify/hydrogen-redirect-theme)
+
+Then add the redirect url
+
+Configure the redirects in "Theme settings \> Storefront".
+
+use the hydrogen domain you're going to be using as the redirect.
+
+Site needs to be public for the tag to be tested. Also we need to use the checkout domain for pexels and the normal GTAGS for store subdomain.
+
+Add a new environment variable with a key of `PUBLIC_CHECKOUT_DOMAIN` and the value of your checkout domain. 
+
+1. Don't include `https://`.
+2. Apply the variable to your **Production** environment.
+
+<Tip>
+  Make sure to check the console logs in your hydrogen storefront domain in case the tags don't work. Sometimes the configurations aren't correct.
+</Tip>
+
+Google Tag Manager Setup:
+
+The Measurement ID is from the ID from Google analytics (not google tag manager)
+
+[https://developers.google.com/tag-platform/tag-manager/datalayer#use\_a\_data\_layer\_with\_event\_handlers](https://developers.google.com/tag-platform/tag-manager/datalayer#use_a_data_layer_with_event_handlers)
+
+**Set environment variables**  in your \`.env` file:`<br />`bash`<br />`   GTM_CONTAINER_ID=GTM-XXXXXXX  # Your Google Tag Manager container ID`<br />`   # OR`<br />`   GTM_ID=GTM-XXXXXXX`
+
+^ add to your custom env variables in hydrogen storefront as well.
+
+Setting up the Google Tag Events is a little more difficult. I'm going to assume you're creating a whole new Google Tag and GA4 Tag.
+
+### Link Your Store to Local Development
+
+Run `npx shopify hydrogen link` to also inject environment variables from your storefront, iin your web folder. then` npx shopify hydrogen env pull`<br />do not use pnpm for this.
+
+#### Matamo
+
+[https://github.com/matomo-org/tag-manager](https://github.com/matomo-org/tag-manager)
+
+#### SEO
+
+This is in the root.
+
+```text
+<meta name="robots" content="noindex">
+
+If you want your site to be indexed then remove this. Its for sites, not production read affiliated with the vantage supply site.
+```
