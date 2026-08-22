@@ -64,7 +64,8 @@
               }
             ]
           },
-          "untitled-page-5"
+          "untitled-page-5",
+          "untitled-page-7"
         ]
       },
       {
@@ -91,25 +92,6 @@
                   "quering",
                   "refreshing-sanity-data",
                   "product-types"
-                ]
-              },
-              {
-                "group": "Demos",
-                "pages": [
-                  {
-                    "group": "Takumi",
-                    "pages": [
-                      "takumi-automotives",
-                      "art-direction",
-                      {
-                        "group": "Products",
-                        "pages": [
-                          "shirts"
-                        ]
-                      },
-                      "art-direction"
-                    ]
-                  }
                 ]
               },
               {
@@ -172,7 +154,27 @@
       {
         "tab": "Aggregate",
         "pages": [
-          "status"
+          "status",
+          "untitled-page-6"
+        ]
+      },
+      {
+        "tab": "Demos",
+        "pages": [
+          {
+            "group": "Takumi",
+            "pages": [
+              "takumi-automotives",
+              "art-direction",
+              {
+                "group": "Products",
+                "pages": [
+                  "shirts"
+                ]
+              },
+              "art-direction"
+            ]
+          }
         ]
       }
     ]

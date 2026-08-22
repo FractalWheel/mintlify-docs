@@ -1,0 +1,13 @@
+---
+title: "Google Analytics"
+---
+
+Most of this is covered in other guides but we'll display it professionally here
+
+## Edge Cases
+
+### Events Not Firing
+
+This case may happen when deploying on a new analytics deployment. This case is usually bad. Only thing to note here is to pretty much not ever leave the current analytics deployment because the website cache is hitting the older data and we would need the user to accept the new cookies coming in.
+
+Will report later if we find any answers to clear the user's cache at will later as a one time thing in case this ever happens in production. Adding this to tasks.
